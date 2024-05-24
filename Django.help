@@ -1,0 +1,29 @@
+How to Set up Django ? 
+
+1 - Set Up a Virtual Environment ===>   python3 -m venv myenv
+
+2 - Activate the Virtual Environment ===> source myenv/bin/activate
+
+3 - Install Django ===>   pip install django
+
+4 - Verify Django Installation ===> django-admin --version
+
+5 - Create a Django Project ===>   django-admin startproject myproject
+
+
+6 - Run the Development Server ===> cd myproject
+									python manage.py runserver
+
+
+---  Deactivate the virtual environment ===> use "deactivate" command
+
+
++++ to fixe this problem :  "You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them." ===> python manage.py migrate
+
+
+++ How to Create app in my project ?
+		python manage.py startapp App_Name
+
+
+Good Luck .

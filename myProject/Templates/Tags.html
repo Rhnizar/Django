@@ -1,0 +1,26 @@
+<style>
+    body{
+        background: #000;
+    }
+</style>
+
+{% load static %}
+
+{% include "parts/navbar.html" %}
+{% block content %}
+<h1 style="color:green;">Here we can add any code that does not need to be inherited</h1>
+{% if name == 'rida' %}
+    <h1 style="color:green;">Yes</h1>
+{% elif name == 'oo' %}
+    <h1 style="color:green;">No</h1>
+{% else %}
+    <h1 style="color:green;">Yes No</h1>
+{% endif %}
+
+{% for x in name %}
+    <h1 style="color:blue;">{{x}}</h1>
+
+{% endfor %}
+
+{% endblock content %}
+{% include "parts/footer.html" %}
